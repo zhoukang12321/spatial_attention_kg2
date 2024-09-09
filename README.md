@@ -1,5 +1,6 @@
-# MGL for VN
-Multimodal Graph Learning and Action Boost Memory for Visual Navigation
+#Utilising and Distilling Multimodal Scene Graph for
+Visual Navigation
+
 
 DETR pretrained file can be found in https://github.com/sx-zhang/HOZ.git
 
@@ -32,7 +33,7 @@ thor_offline_data which is organized into sub-folders, each of which corresponds
 thor_glove which contains the GloVe embeddings for the navigation targets.
 gcn which contains the necessary data for the Graph Convolutional Network (GCN) in Scene Priors, including the adjacency matrix.
 Note that the starting positions and scenes for the test and validation set may be found in test_val_split.
-
+#scene graph is sg datasets, we crawel from the ai2thor environment using fastercnn
 If you wish to access the RGB images in addition to the ResNet features, replace thor_offline_data with thor_offlline_data_with_images. If you wish to run your model on the image files, add the command line argument --images_file_name images.hdf5.
 
 Evaluation using Pretrained Models
